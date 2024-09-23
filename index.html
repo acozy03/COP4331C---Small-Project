@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nautical Network</title>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="title">The Nautical Network</h1>
+<div class="logo"></div>
+
+<div id="loginDiv">
+
+    <div class="input-container">
+        <i class="fas fa-user"></i> <!-- Username icon -->
+        <input type="text" id="loginName" placeholder="Username" />
+    </div>
+
+    <div class="input-container">
+        <i class="fas fa-lock"></i> <!-- Password icon -->
+        <input type="password" id="loginPassword" placeholder="Password" />
+    </div>
+
+    <div class="button-container">
+        <button type="button" id="loginButton" class="buttons" onclick="doLogin();">Sign In</button>
+        <button type="button" id="signupButton" class="buttons" onclick="toggleForm('signupDiv', 'loginDiv')">Sign Up</button>
+    </div>
+
+    <span id="loginResult"></span>
+</div>
+<!-- Sign-Up Section (Hidden) -->
+<div id="signupDiv" class="hidden">
+    <span id="inner-title">CREATE ACCOUNT</span>
+    <input type="text" id="signupFirstName" placeholder="First Name" /><br />
+    <input type="text" id="signupLastName" placeholder="Last Name" /><br />
+    <input type="text" id="signupLogin" placeholder="Username" /><br />
+    <input type="password" id="signupPassword" placeholder="Password" /><br />
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" /><br />
+
+    <div class="button-container">
+        <button type="button" id="signupCreateAccountButton" class="buttons" onclick="doSignup();">Create Account</button>
+        <button type="button" id="returnButton" class="buttons" onclick="toggleForm('loginDiv', 'signupDiv')">Back to Sign In</button>
+    </div>
+
+    <span id="signupResult"></span>
+</div>
+
+<!-- Function to toggle to sign up page -->
+
+<script>
+    function toggleForm(showDiv, hideDiv) {
+
+        // Show the selected form
+        document.getElementById(showDiv).classList.remove('hidden');
+        document.getElementById(showDiv).classList.add('visible');
+        document.getElementById(hideDiv).classList.remove('visible');
+        document.getElementById(hideDiv).classList.add('hidden');
+    }
+</script>
+
+</body>
+</html>
