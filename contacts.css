@@ -1,0 +1,195 @@
+/* Body formatting */
+body {
+    background-image: url('/images/background1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+/* Sidebar styling */
+.sidenav {
+    width: 115px;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: #003366; 
+    opacity: 1; 
+    color: white;
+    text-align: center; 
+}
+
+/* Logo styling */
+.sidebar-logo {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+    background-color: #FFF;
+}
+
+/* Logout button styling */
+.sidebuttons {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Content styling */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+    width: calc(100% - 270px);
+}
+
+/* Title styling */
+#title {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Box styling */
+#loggedInDiv, #accessUIDiv {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #FFF1A8;
+    border: none;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* Contact item styling */
+.contact-item {
+    padding: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    font-size: 20px;
+}
+
+.contact-item > div:not(:last-child) {
+    margin-bottom: 20px; /* Space between name, email, and phone */
+}
+
+.contact-item > div {
+    margin-right: 20px; /* Space between text and buttons */
+}
+
+.contact-icons {
+    gap: 10px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #2D5C7F;
+}
+
+.icon-button:hover {
+    color: #007bff;
+}
+
+/* Buttons styling */
+.buttons {
+    font-size: 14px;
+    border-radius: 50px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    padding: 10px 0;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.buttons:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+}
+
+table th {
+    background-color: #003366;
+    color: #FFF;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Edit and Delete button styling in the table */
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 5px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.action-button:hover {
+    color: #007bff;
+}
+
+#editContactForm {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
